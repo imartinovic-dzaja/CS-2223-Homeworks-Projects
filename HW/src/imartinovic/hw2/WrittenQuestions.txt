@@ -1,0 +1,58 @@
+<<Your Name Here>>
+HW2
+Written Questions
+
+Q1. No need for separate written questions. Your code should just run
+
+Q2. No need for separate written questions. Your code should just run
+
+Q3.1 [8 pts.] Identify the base case for S() and the recursive case for S(n)
+Base case is S(1) = 2;
+Recursive case is S(n) = 1 + n/2 + S(n/2)
+
+Q3.2 [12 pts.] Derive an exact solution for S(N) when N is a power of 2. Be sure to show your work.
+If 	S(n) = 1 + n/2 + S(n/2)
+Then:
+	S(n/2) = 1 + n/4 + S(n/4)
+	S(n/4) = 1 + n/8 + S(n/8)
+	...
+	...
+	S(2) = 1 + n/(2^log(n)) + S(1)
+	
+Re-expressing S(n):
+S(n) = 1 + n/2 + 1 + n/4 + 1 +n/8 + ... + 1 + n/(2^log(n)) + S(1)
+Grouping common terms together:
+S(n) = (1 + 1 + 1 + 1 + 1 + 1 +...) + (n/2 + n/4 + n/8 + n/16 + n/32 + n/64... + n/(2^log(n)) + S(1)
+		There are log(n) of 1's			these terms can be re-expressed as a geometric series	this is the base case
+Therefore we may re-express the above as:
+S(n) = log(n) + n/2*( (1 - (1/2)^(log(n)) / (1 - 1/2)) + 2
+S(n) = log(n) + n * (1 - 1/n) + 2
+S(n) = log(n) + (n - 1) + 2
+S(n) = log(n) + n + 1
+q.e.d.
+<< if you think this would be better done with a word document with equations, be sure to include that  >>
+<< with your submission.                                                                                >>
+
+Q4. No need for written question since your code should just run. 
+
+
+BONUS QUESTIONS
+
+3.3 [1 pt.] Can you derive a formula that predices the Value printed proc(a, 0, a.length-1) when a contains the 
+            integers from 0 to n-1 and N is a power of 2.
+            
+ f(N) = (4/21*N^3)-(2/3*N^2)+(2/3*N)-4/21
+ 
+ //you may check the validity in the Predicted Value column
+    
+4.2 [1 pt.] Derive formula for T(n+1,k) in terms of T(n,k) and n and k?  
+
+T(n+1,k) = ((T(n,k) - 1 + k ) % (n+1)) + 1
+            
+4.3 [1 pt.] Derive formula that computes T(n,2) for any n >= 2
+
+T(n,2) = 2*(n-2^(floor(log(n)))+1
+
+4.4 [1 pt.] Find twin pairs in the right diagonal, as well as the first ten n-1 instances
+
+

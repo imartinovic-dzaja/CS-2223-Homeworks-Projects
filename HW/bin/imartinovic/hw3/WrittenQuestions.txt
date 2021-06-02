@@ -1,0 +1,23 @@
+<<Ivan Martinovic>>
+HW3
+Written Questions
+
+Q1.
+Do your empirical results support the proposition? Explain why or why not:
+
+For easier reading here is one of the resulting outputs of running my code:
+N		MaxComp		MaxExch
+16		26			13
+32		56			27
+64		117			52
+128		240			104
+256		487			204
+512		972			402
+
+
+My experimental results do indeed support the proposition:
+We may see that every entry in MaxComp column is less than twice the value of N
+We can also see that every entry in MaxExch is less than the value of N
+
+Therefore both statements of the proposition i.e. the maximum number of comparisons is less than 2N and the maximum number of exchanges is less than N 
+have been satisfied.

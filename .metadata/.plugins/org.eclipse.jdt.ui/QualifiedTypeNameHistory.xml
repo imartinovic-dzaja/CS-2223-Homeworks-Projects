@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="imartinovic.hw2.WordSymbolTable"/>
+<fullyQualifiedTypeName name="imartinovic.hw2.WordList.Node"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="edu.princeton.cs.algs4.StdRandom"/>
+<fullyQualifiedTypeName name="edu.princeton.cs.algs4.Graph"/>
+<fullyQualifiedTypeName name="edu.princeton.cs.algs4.BreadthFirstPaths"/>
+<fullyQualifiedTypeName name="java.awt.geom.Line2D"/>
+<fullyQualifiedTypeName name="java.awt.geom.Line2D.Double"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
+</qualifiedTypeNameHistroy>
